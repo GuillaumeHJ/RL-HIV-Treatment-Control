@@ -19,13 +19,15 @@ The project is inspired by the works of Ernst et al. (2006) and Adams et al. (20
 RL-HIV-Treatment-Control/
 ├── README.md
 ├── requirements.txt
+├── notebooks/
+│   └── rl_mva_HIV.ipynb   # Colab notebook to launch training and evaluation
 ├── src/
-│ ├── env_hiv.py
-│ ├── interface.py
-│ ├── evaluate.py
-│ ├── train.py
-│ └── main.py
-└── saved_models/
+│   ├── env_hiv.py          # Simulator (do not modify)
+│   ├── interface.py        # Agent interface (do not modify)
+│   ├── evaluate.py         # Evaluation script (do not modify)
+│   ├── train.py            # Your RL agent implementation
+│   └── main.py             # Entry point for automated evaluation
+└── saved_models/           # Folder to store trained agent(s)
 ```
 
 - `src/train.py`: Your RL agent implementation (DQN with epsilon-greedy and RMSProp optimization).  
@@ -37,6 +39,20 @@ RL-HIV-Treatment-Control/
 - Applied **epsilon-greedy exploration** for policy optimization.
 - Used **RMSProp optimizer** to stabilize training.
 - Experimented with **different layer architectures** to balance learning speed and stability.
-- Successfully trained the agent to pass **8/9 automated evaluation tests** on the GitHub Classroom challenge.  
+- Successfully trained the agent to pass **8/9 automated evaluation tests** on the GitHub Classroom challenge.
+
+## Colab Notebook
+
+For convenience, you can launch training and evaluation in Google Colab using the provided notebook:
+
+`notebooks/rl_mva_HIV.ipynb`
+
+This notebook allows you to:
+
+- Run the RL agent training interactively.
+- Monitor training progress and performance metrics.
+- Load saved models from `saved_models/` for evaluation or further experimentation.
+
+Simply open the notebook in Colab, ensure the `src/` folder is mounted or copied, and run the cells sequentially.
 
 
