@@ -1,58 +1,89 @@
-# RL HIV Treatment Control
+# 👋 Hi — I’m Guillaume Henon-Just  
+**@GuillaumeHJ** — Machine Learning engineer & researcher (MVA, ENS & École des Ponts ParisTech)  
+I’m preparing a transition toward a **PhD in Machine Learning applied to Biology**. My background spans research-oriented projects in CV, **RL, GNNs,** semi-supervised learning, **industrial research at Valeo**, and a **5-month research stay at OIST (Japan)** where I worked on **deep learning–based blind source separation for music** using architectures inspired by computer vision. I’m especially motivated to apply **GNNs and RL** to biological and chemical systems.
 
-## Project Overview
+---
 
-This project was completed as part of the Reinforcement Learning course at ENS (MVA) in 2024–25. The assignment aimed to design and train a Reinforcement Learning (RL) agent to control the treatment of HIV patients through structured treatment interruption (STI), balancing drug administration to maintain patient health while avoiding side effects and resistance. 
+## 🧭 Current Status  
+- 🎓 Graduated from **MVA (Mathematics, Vision & Learning)** at ENS and from **École des Ponts ParisTech (Institut Polytechnique de Paris)**  
+- 💼 **Research Engineer at Valeo** — developing a Deep RL pipeline for **2D irregular polygon nesting** using **GNNs + DRL + CORL**  
+- 🔭 Preparing PhD applications in **ML for biology**
 
-The project is inspired by the works of Ernst et al. (2006) and Adams et al. (2004), simulating the patient's immune system through six state variables (CD4/CD8 cells, infected cells, virus particles).  
+---
 
-## Objectives
+## 🎯 Research Interests  
+- **Graph Neural Networks (GNNs)**  
+- **Deep Reinforcement Learning (DRL)**  
+- **Applications of ML to Chemistry**  
+- Target domains I’m transitioning toward:  
+  ➝ **Gene regulatory networks (GRNs)**  
+  ➝ **Computational chemistry & molecular prediction**  
+  ➝ **Systems biology & control**
 
-- Develop a reinforcement learning agent capable of optimizing HIV treatment strategies.
-- Interact with a deterministic, Gym-like simulation environment (`HIVPatient`).
-- Explore various RL algorithms and training strategies.
-- Evaluate the agent on default and randomized patients via automated tests.
+---
 
-## Repository Structure
+## 📂 Selected Projects
 
-```text
-RL-HIV-Treatment-Control/
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   └── rl_mva_HIV.ipynb   # Colab notebook to launch training and evaluation
-├── src/
-│   ├── env_hiv.py          # Simulator (do not modify)
-│   ├── interface.py        # Agent interface (do not modify)
-│   ├── evaluate.py         # Evaluation script (do not modify)
-│   ├── train.py            # Your RL agent implementation
-│   └── main.py             # Entry point for automated evaluation
-└── saved_models/           # Folder to store trained agent(s)
-```
+### 🔹 1. CoVR — Composed Video/Image Retrieval  
+**Repo:** https://github.com/GuillaumeHJ/CoVR  
+Investigated how to improve multimodal embedding fusion for composed retrieval tasks. The goal was to build more flexible models capable of combining text, video, and image representations efficiently for large-scale retrieval scenarios.
 
-- `src/train.py`: Your RL agent implementation (DQN with epsilon-greedy and RMSProp optimization).  
-- `saved_models/`: Store trained models here.  
+---
 
-## Your Contributions
+### 🔹 2. Semi-Supervised Segmentation of CT Scans  
+**Repo:** https://github.com/GuillaumeHJ/Semi-Supervised-Segmentation-of-CT-Scans  
+Addressed the challenge of limited annotations in medical imaging by exploring semi-supervised segmentation strategies. The project focused on scalable clinical workflows where annotated data is scarce and unlabeled data is abundant.
 
-- Implemented a **DQN agent** with customizable neural network architectures.
-- Applied **epsilon-greedy exploration** for policy optimization.
-- Used **RMSProp optimizer** to stabilize training.
-- Experimented with **different layer architectures** to balance learning speed and stability.
-- Successfully trained the agent to pass **8/9 automated evaluation tests** on the GitHub Classroom challenge.
+---
 
-## Colab Notebook
+### 🔹 3. RL for HIV Treatment Control  
+**Repo:** https://github.com/GuillaumeHJ/RL-HIV-Treatment-Control  
+Worked on reinforcement learning–based strategies for optimal treatment scheduling in HIV therapy. The objective was to model clinical decision-making under constraints and design agents that balance drug efficacy and patient well-being.
 
-For convenience, you can launch training and evaluation in Google Colab using the provided notebook:
+---
 
-`notebooks/rl_mva_HIV.ipynb`
+## 🔬 Research in Chemistry (Personal Collaboration)  
+I collaborate with my father (Université de Reims) on molecular interaction energies.  
+- ✅ First paper on **steric repulsion** published  
+- 📄 Currently working on **GNN-based energy prediction**  
+- Preprint: https://chemrxiv.org/engage/chemrxiv/article-details/689761de23be8e43d686ebca  
+This experience fuels my motivation to move toward **ML in chemistry and biology**.
 
-This notebook allows you to:
+---
 
-- Run the RL agent training interactively.
-- Monitor training progress and performance metrics.
-- Load saved models from `saved_models/` for evaluation or further experimentation.
+## 🧪 Current Biology-Focused Project  
+**GNN + RL for Gene Regulatory Network (GRN) Control**  
+Inspired by this 2025 paper: https://arxiv.org/abs/2505.02712  
+**Goals:**  
+- ✅ Reproduce the paper’s experiments  
+- 🔧 Explore improved GNN architectures for GRNs  
+- 🎮 Benchmark RL frameworks (PPO, SAC, DQN, CORL)  
+Aim: build a portfolio project aligned with PhD research in **ML for biology**.
 
-Simply open the notebook in Colab, ensure the `src/` folder is mounted or copied, and run the cells sequentially.
+---
 
+## 🛠️ Skills & Tools  
+- **Python**, PyTorch, PyTorch Geometric  
+- **RL frameworks** (stable-baselines3, gymnasium)  
+- Cloud & compute: **GCP, Colab, GPU training**  
+- Reproducibility: notebooks, reports, requirements files, experiment tracking  
+- Data handling, Docker basics, Git best practices
 
+---
+
+## 🌱 What I’m Looking For  
+- PhD opportunities in **ML for biology / computational systems biology / molecular ML**  
+- Collaborations involving **GNNs, RL, or molecular/biological Machine Learning**  
+- Research teams bridging ML with life sciences
+
+---
+
+## 🔗 Contact & Links  
+- **GitHub:** https://github.com/GuillaumeHJ  
+- **LinkedIn:** https://www.linkedin.com/in/guillaume-henon-just-401943220/  
+- **Email:** guillaume.henon-just@enpc.fr
+
+---
+
+## 📝 Quick One-Liner (About Me)  
+*“MVA (ENS) graduate and Research Engineer at Valeo. Experience in multimodal retrieval, medical image segmentation, RL for biological simulations, and deep learning source separation. Now transitioning to PhD-level research applying GNNs and RL to gene regulatory networks and molecular systems.”*
